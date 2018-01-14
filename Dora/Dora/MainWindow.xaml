@@ -1,0 +1,11 @@
+﻿<Window x:Class="Dora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Dora.Controls"
+        x:Name="MainWindowRoot"
+        Title="Dora" Height="360" Width="640">
+    <ScrollViewer Background="#FAFAFA" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <controls:MillerColumns x:Name="columns"
+                ItemsSource="{Binding Items, ElementName=MainWindowRoot}"/>
+    </ScrollViewer>
+</Window>
